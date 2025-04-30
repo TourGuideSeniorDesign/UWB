@@ -1,0 +1,5 @@
+repositories:
+    wheelchair_sensor_msgs:
+        type: git
+        url: https://github.com/WheelchairSeniorDesign/wheelchair_sensor_msgs.git
+        version: main
