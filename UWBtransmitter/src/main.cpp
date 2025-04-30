@@ -82,6 +82,7 @@ void setup() {
 }
 
 void loop() {
+    microRosTick();
     switch (state) {
         case WAITING_AGENT:
             if (is_agent_connected()) {
@@ -99,7 +100,8 @@ void loop() {
 
         case AGENT_CONNECTED:
             if (is_agent_connected()) {
-                // Inline uwb_loop logic
+                
+                //  uwb_loop logic
                 uwb_msg.dist1 = 0;
                 uwb_msg.dist2 = 0;
                 uwb_msg.dist3 = 0;
